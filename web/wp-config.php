@@ -124,6 +124,9 @@ if ($configExtra = getenv_docker('WORDPRESS_CONFIG_EXTRA', '')) {
 
 /* That's all, stop editing! Happy publishing. */
 
+define('WP_SITEURL', 'http://34.31.125.68:8000');
+define('WP_HOME', 'http://34.31.125.68:8000');
+
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
