@@ -5,7 +5,7 @@ services:
   db:
     image: mysql:5.7
     volumes:
-      - ./db_data:/var/lib/mysql
+      - .web/db_data:/var/lib/mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: password
@@ -36,7 +36,7 @@ services:
     ports:
       - '8000:80'
     restart: always
-    volumes: ['./:/var/www/html','./wordpress.ini:/usr/local/etc/php/conf.d/wordpress.ini']
+    volumes: ['.web/:/var/www/html','.web/wordpress.ini:/usr/local/etc/php/conf.d/wordpress.ini']
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
