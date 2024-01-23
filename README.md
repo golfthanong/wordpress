@@ -1,2 +1,2 @@
 # wordpress
-wordpress krc
+wordpress krc test
