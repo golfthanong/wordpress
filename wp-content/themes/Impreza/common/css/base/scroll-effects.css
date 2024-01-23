@@ -1,0 +1,9 @@
+/* Scroll Effects
+------------------------------------------------------------------*/
+.has_scroll_effects.has_translate_y {
+	transform: translateY( var(--translateY, 0) );
+	transition: transform var(--scroll-delay, 0);
+	}
+	.has_scroll_effects.in_viewport {
+		/* styles for an element when in a viewport */
+		}
